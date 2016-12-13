@@ -541,6 +541,7 @@ aside a.button {
   width: 138px;
   padding-left: 64px;
   margin-bottom: 20px;
+  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 21px;
   background: transparent url(../images/download-button.png) 0 0 no-repeat;
 }
