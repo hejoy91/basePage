@@ -18,6 +18,11 @@
   </head>
 
 <body>
+  <script>
+    $(document).ready(function(){
+      $("#txt").load("test.txt");
+    });
+  </script>
   <header>
       <div class="inner">
         <h1>Can we DO it ?</h1>
@@ -37,10 +42,8 @@
         <p>……</p>
         <p>也许，当一个人知道自己的渺小时，才不会那么无知。</p>
         <img src="/images/pigs.jpg" >  
-        <hr/><time>2016-12-17 15:07</time>
-        <p>今天看了最新的友人帐5，还是依旧那么温暖。<br>
-        没有跳过片头和片尾曲，仔细倾听这些音乐反而更加的享受这份美好，漫长的冬季里，或许不只太阳带来光和热吧。
-        </p>
+        <hr/>
+        <p id="txt"></p>
       </section>
       <aside id="sidebar">
           <a href="" class="button">
@@ -53,8 +56,7 @@
       </div>
     </div>
     <div align="center">
-      <input type="text"/> <button onclick="$('#idtest').load('test.txt')">test</button>
-      <p id="idtest">111</p>
+      <input type="text"/> <button onclick="">click</button>
     </div>
   <hr/>
   
