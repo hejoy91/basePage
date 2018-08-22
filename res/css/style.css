@@ -1,0 +1,14 @@
+body{
+	text-align: center;
+}
+ul{
+	height: 50px;
+	border:solid 1px;
+	overflow-y: scroll;
+}
+li:nth-of-type(odd){
+	background-color: #5FB878;
+}
+li:nth-of-type(even){
+	background-color: #B2B2B2;
+}

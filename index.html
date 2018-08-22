@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-    <script src="javascripts/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="layui/css/layui.css" />
 
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -51,13 +51,11 @@
       </div>
     </div>
     <div align="center">
-      <input type="text"/> <button onclick="">click</button>
+      <input type="text"/> <button class="layui-btn-fluid btnTest" onclick="">click</button>
     </div>
   <hr/>
-  <script>
-    $(document).ready(function(){
-      $("#txt").load("test.txt");
-    });
-  </script>
+  <script src="javascripts/jquery-3.3.1.min.js"></script>
+  <script src="layui/layui.js"></script>
+  <script src="res/js/index.js"></script>
   </body>
 </html>
