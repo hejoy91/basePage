@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
     <link rel="stylesheet" href="layui/css/layui.css" />
+    <link rel="stylesheet" href="res/css/style.css" />
 
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -25,35 +25,66 @@
         <h2>Maybe we...</h2>
       </div>
   </header>
-
-  <div id="content-wrapper">
-    <div class="inner clearfix">
-      <section id="main-content">
-        <h3>
-        <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Colorful Days.</h3>
-        <p></p>
-        <p>你会成为一个温暖的人吗?</p>
-        <p>会吧?</p>
-        <p>……</p>
-        <p>也许，当一个人知道自己的渺小时，才不会那么无知。</p>
-        <img src="/images/pigs.jpg" >  
-        <hr/>
-        <p id="txt"></p>
-      </section>
-      <aside id="sidebar">
-          <a href="" class="button">
-            <small>-La'bu</small>a little elfin
-          </a>
-          <img src="/images/labu.jpg" height=auto width=202>
+  <div class="inner">
+  	<div class="fl content-main">
+  		<h3 class="content-main">
+        	<a id="welcome-to-github-pages" class="anchor" href="" aria-hidden="true">
+        		<span aria-hidden="true" class="octicon octicon-link"></span>
+        	</a>Colorful Days.
+      </h3>
+      <div class="content">
+      	<p></p>
+				<p>你会成为一个温暖的人吗?</p>
+				<p>会吧?</p>
+				<p>……</p>
+				<p>也许，当一个人知道自己的渺小时，才不会那么无知。</p>
+      </div>
+			<img src="images/pigs.jpg" >  
+			<hr/>
+			<div class="loging">
+        	<ul class="layui-timeline">
+        		<li class="layui-timeline-item">
+        			<i class="layui-icon layui-icon-circle layui-timeline-axis"></i>
+        			<div class="layui-timeline-content layui-text">
+        				<h4>2016-12-17 15:07</h4>
+        				<p>
+        					今天看了最新的友人帐5，还是依旧那么温暖。<br/>
+        					没有跳过片头和片尾曲，仔细倾听这些音乐反而更加的享受这份美好，漫长的冬季里，或许不只太阳带来光和热吧。
+        				</p>
+        			</div>
+        		</li>
+        		<li class="layui-timeline-item">
+        			<i class="layui-icon layui-icon-circle layui-timeline-axis"></i>
+        			<div class="layui-timeline-content layui-text">
+        				<p>归零</p>
+        				
+        			</div>
+        		</li>
+        	</ul>
+        </div>
+			
+			
+    </div>
+    <div class="fr sidebar-r personalInfo">
+          <span class="layui-icon layui-icon-diamond">
+            -La'bu - little elfin
+          </span>
+          <img src="images/labu.jpg" class="personalPic">
 
           <!--<p class="repo-owner"><a href=""></a> is maintained by <a href="">hejoy91</a>.</p>--> 
-       </aside>
+  	</div>
+  </div>
+  <hr />
+  
+    <div class="footer">
+      <i class="layui-icon layui-icon-tree tree"></i> 
+      <i class="layui-icon layui-icon-release plane"></i>
+      <div class="fr">
+      	<input type="text"/>
+      <button class="layui-btn btnTest" onclick="">click</button>
       </div>
+      
     </div>
-    <div align="center">
-      <input type="text"/> <button class="layui-btn-fluid btnTest" onclick="">click</button>
-    </div>
-  <hr/>
   <script src="javascripts/jquery-3.3.1.min.js"></script>
   <script src="layui/layui.js"></script>
   <script src="res/js/index.js"></script>
