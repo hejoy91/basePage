@@ -4,19 +4,29 @@ body{
 .border{border: solid 1px;}
 .clearfix{display: block;}
 
-div.personalInfo{
+.personalInfo{
 	transition: 2s;
 	-moz-transition: 2s;	/* Firefox 4 */
 	-webkit-transition: 2s;	/* Safari 和 Chrome */
 	-o-transition: 2s;	/* Opera */
 }
-div.personalInfo:hover{
+.personalInfo:hover{
 	color: orange;
 	transform:rotate(360deg);
 	-moz-transform:rotate(360deg); /* Firefox 4 */
 	-webkit-transform:rotate(360deg); /* Safari and Chrome */
 	-o-transform:rotate(360deg); /* Opera */
 
+}
+.imgBig{
+	
+	transition: 1s;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-moz-transition: 1s;
+}
+.imgBig:hover{
+	
 }
 
 .content{margin-bottom: 10px;}
@@ -34,6 +44,7 @@ div.personalInfo:hover{
 .personalPic{
 	height: auto;
 	width: 202px;
+	border-radius: 5px;
 }
 .fl{float: left;}
 .fr{float: right;}
@@ -98,6 +109,10 @@ h4{
 	padding-bottom: 20px;
 	margin: 0 auto;
 }
+.loginTips{
+	margin-right: -150px;
+	font-size: 16px;
+}
 .tree{
 	font-size: 40px;
 	color: green;
@@ -105,50 +120,32 @@ h4{
 .plane{
 	font-size: 18px;
 	position: relative;
-	animation: plane 5s linear 1s infinite alternate running;
-	-moz-animation: plane 5s linear 1s infinite alternate running;
-	-webkit-animation: plane 5s linear 1s infinite alternate running;
-	-o-animation: plane 5s linear 1s infinite alternate running;
+	animation: plane_i 5s linear 1s infinite alternate running;
+	-moz-animation: plane_i 5s linear 1s infinite alternate running;
+	-webkit-animation: plane_i 5s linear 1s infinite alternate running;
+	-o-animation: plane_i 5s linear 1s infinite alternate running;
 }
-@keyframes plane{
-	0%{left: 0px;top: 0px;}
-	10%{left: 20px;top: -25px;}
-	15%{
-		
-		transform: rotate(45deg);
-		-moz-transform: rotate(45deg);
-		-webkit-transform: rotate(45deg);
-		-o-transform: rotate(45deg);
-	}
-	100%{left: 940px;top: 0px;}
+@keyframes plane_i{
+	0%{transform: rotate(0deg);left: 0px;top: 0px;}
+	20%{transform: rotate(25deg);left: 20px;top: -25px;}
+	25%{transform: rotate(40deg);left: 20px;top: -25px;}
+	100%{transform: rotate(45deg);left: 940px;top: 0px;}
 }
-@-moz-keyframes plane{
-	0%{left: 0px;top: 0px;}
-	10%{left: 20px;top: -25px;}
-	15%{
-		
-		transform: rotate(45deg);
-		-moz-transform: rotate(45deg);
-		-webkit-transform: rotate(45deg);
-		-o-transform: rotate(45deg);
-	}
-	100%{left: 940px;top: 0px;}
+@-moz-keyframes plane_i{
+	0%{-moz-transform: rotate(0deg);left: 0px;top: 0px;}
+	20%{-moz-transform: rotate(25deg);left: 20px;top: -25px;}
+	25%{-moz-transform: rotate(40deg);left: 20px;top: -25px;}
+	100%{-moz-transform: rotate(45deg);left: 940px;top: 0px;}
 }
-@-webkit-keyframes plane{
-	0%{left: 0px;top: 0px;}
-	10%{left: 20px;top: -25px;}
-	15%{
-		
-		transform: rotate(45deg);
-		-moz-transform: rotate(45deg);
-		-webkit-transform: rotate(45deg);
-		-o-transform: rotate(45deg);
-	}
-	100%{left: 940px;top: 0px;}
+@-webkit-keyframes plane_i{
+	0%{-webkit-transform: rotate(0deg);left: 0px;top: 0px;}
+	20%{-webkit-transform: rotate(25deg);left: 20px;top: -25px;}
+	25%{-webkit-transform: rotate(40deg); left: 20px;top: -25px;}
+	100%{-webkit-transform:rotate(45deg);left: 940px;top: 0px;}
 }
-@-o-keyframes plane{
-	0%{left: 0px;top: 0px;}
-	10%{left: 20px;top: -25px;}
-	15%{-o-transform: rotate(45deg);}
-	100%{left: 940px;top: 0px;}
+@-o-keyframes plane_i{
+	0%{-o-transform: rotate(0deg);left: 0px;top: 0px;}
+	20%{-o-transform: rotate(25deg);left: 20px;top: -25px;}
+	25%{-o-transform: rotate(40deg);left: 20px;top: -25px;}
+	100%{-o-transform: rotate(45deg);left: 940px;top: 0px;}
 }
