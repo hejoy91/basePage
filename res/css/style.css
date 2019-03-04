@@ -120,30 +120,30 @@ h4{
 .plane{
 	font-size: 18px;
 	position: relative;
-	animation: plane_i 5s linear 1s infinite alternate running;
-	-moz-animation: plane_i 5s linear 1s infinite alternate running;
-	-webkit-animation: plane_i 5s linear 1s infinite alternate running;
-	-o-animation: plane_i 5s linear 1s infinite alternate running;
+	animation: myplane 5s linear 1s infinite alternate;
+	-moz-animation: myplane 5s linear 1s infinite alternate;
+	-webkit-animation: myplane 5s linear 1s infinite alternate;
+	-o-animation: myplane 5s linear 1s infinite alternate;
 }
-@keyframes plane_i{
+@keyframes myplane{
 	0%{transform: rotate(0deg);left: 0px;top: 0px;}
 	20%{transform: rotate(25deg);left: 20px;top: -25px;}
 	25%{transform: rotate(40deg);left: 20px;top: -25px;}
 	100%{transform: rotate(45deg);left: 940px;top: 0px;}
 }
-@-moz-keyframes plane_i{
+@-moz-keyframes myplane{
 	0%{-moz-transform: rotate(0deg);left: 0px;top: 0px;}
 	20%{-moz-transform: rotate(25deg);left: 20px;top: -25px;}
 	25%{-moz-transform: rotate(40deg);left: 20px;top: -25px;}
 	100%{-moz-transform: rotate(45deg);left: 940px;top: 0px;}
 }
-@-webkit-keyframes plane_i{
+@-webkit-keyframes myplane{
 	0%{-webkit-transform: rotate(0deg);left: 0px;top: 0px;}
 	20%{-webkit-transform: rotate(25deg);left: 20px;top: -25px;}
 	25%{-webkit-transform: rotate(40deg); left: 20px;top: -25px;}
 	100%{-webkit-transform:rotate(45deg);left: 940px;top: 0px;}
 }
-@-o-keyframes plane_i{
+@-o-keyframes myplane{
 	0%{-o-transform: rotate(0deg);left: 0px;top: 0px;}
 	20%{-o-transform: rotate(25deg);left: 20px;top: -25px;}
 	25%{-o-transform: rotate(40deg);left: 20px;top: -25px;}
