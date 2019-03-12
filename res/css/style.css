@@ -166,6 +166,7 @@ h3.content-main :before {
 	width: 940px;
 	padding-bottom: 10px;
 	margin: 0 auto;
+	
 }
 .footer .loginTips{
 	margin-top: 10px;
@@ -231,8 +232,8 @@ h3.content-main :before {
 	10% {transform: scale(0.8);}
 	20% {transform: scale(1.1);}
 	25% {transform: scale(1);}
-	45% {transform: rotate(20deg);}
-	85% {transform: rotate(-20deg);}
+	45% {transform: rotate(12deg);}
+	85% {transform: rotate(-12deg);}
 	100% {transform: rotate(0deg);}
 }
 @-webkit-keyframes myhead{
@@ -240,8 +241,8 @@ h3.content-main :before {
 	10% {-webkit-transform: scale(0.8);}
 	20% {-webkit-transform: scale(1.1);}
 	25% {-webkit-transform: scale(1);}
-	45% {-webkit-transform: rotate(20deg);}
-	85% {-webkit-transform: rotate(-20deg);}
+	45% {-webkit-transform: rotate(12deg);}
+	85% {-webkit-transform: rotate(-12deg);}
 	100% {-webkit-transform: rotate(0deg);}
 }
 @-moz-keyframes myhead{
@@ -249,8 +250,8 @@ h3.content-main :before {
 	10% {-moz-transform: scale(0.8);}
 	20% {-moz-transform: scale(1.1);}
 	25% {-moz-transform: scale(1);}
-	45% {-moz-transform: rotate(20deg);}
-	85% {-moz-transform: rotate(-20deg);}
+	45% {-moz-transform: rotate(12deg);}
+	85% {-moz-transform: rotate(-12deg);}
 	100% {-moz-transform: rotate(0deg);}
 }
 @-o-keyframes myhead{
@@ -258,7 +259,7 @@ h3.content-main :before {
 	10% {-o-transform: scale(0.8);}
 	20% {-o-transform: scale(1.1);}
 	25% {-o-transform: scale(1);}
-	45% {-o-transform: rotate(20deg);}
-	85% {-o-transform: rotate(-20deg);}
+	45% {-o-transform: rotate(12deg);}
+	85% {-o-transform: rotate(-12deg);}
 	100% {-o-transform: rotate(0deg);}
 }
