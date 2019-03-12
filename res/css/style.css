@@ -112,7 +112,20 @@ h3.content-main :before {
 .content-main .zw .loging{
 	height: 250px;
 	overflow-y: hidden;
+	overflow-x: hidden;
 	padding-right: 5px;
+	position: relative;
+}
+.content-main .zw .loging .mouse{
+	border-radius: 50px;
+	transform: rotate(-45deg);
+	position: absolute;
+    /* bottom: 0px; */
+    width: 70px;
+    height: 70px;
+    float: right;
+    right: 10px;
+    top: 175px;
 }
 /*********正文部分——end*************/
 /**********右侧部分************/
@@ -218,8 +231,8 @@ h3.content-main :before {
 	10% {transform: scale(0.8);}
 	20% {transform: scale(1.1);}
 	25% {transform: scale(1);}
-	45% {transform: rotate(30deg);}
-	85% {transform: rotate(-30deg);}
+	45% {transform: rotate(20deg);}
+	85% {transform: rotate(-20deg);}
 	100% {transform: rotate(0deg);}
 }
 @-webkit-keyframes myhead{
@@ -227,8 +240,8 @@ h3.content-main :before {
 	10% {-webkit-transform: scale(0.8);}
 	20% {-webkit-transform: scale(1.1);}
 	25% {-webkit-transform: scale(1);}
-	45% {-webkit-transform: rotate(30deg);}
-	85% {-webkit-transform: rotate(-30deg);}
+	45% {-webkit-transform: rotate(20deg);}
+	85% {-webkit-transform: rotate(-20deg);}
 	100% {-webkit-transform: rotate(0deg);}
 }
 @-moz-keyframes myhead{
@@ -236,8 +249,8 @@ h3.content-main :before {
 	10% {-moz-transform: scale(0.8);}
 	20% {-moz-transform: scale(1.1);}
 	25% {-moz-transform: scale(1);}
-	45% {-moz-transform: rotate(30deg);}
-	85% {-moz-transform: rotate(-30deg);}
+	45% {-moz-transform: rotate(20deg);}
+	85% {-moz-transform: rotate(-20deg);}
 	100% {-moz-transform: rotate(0deg);}
 }
 @-o-keyframes myhead{
@@ -245,7 +258,7 @@ h3.content-main :before {
 	10% {-o-transform: scale(0.8);}
 	20% {-o-transform: scale(1.1);}
 	25% {-o-transform: scale(1);}
-	45% {-o-transform: rotate(30deg);}
-	85% {-o-transform: rotate(-30deg);}
+	45% {-o-transform: rotate(20deg);}
+	85% {-o-transform: rotate(-20deg);}
 	100% {-o-transform: rotate(0deg);}
 }

@@ -5,6 +5,7 @@ var bindClick = function(){
 		if(!contentOpen){
 			contentOpen = true;
 			$(".content-main .zw .loging").css("overflow-y","scroll");
+			$(".mouse").hide();
 			//$(".content-main .zw .loging").addClass("overflow-scroll");
 			layer.open({
 				type: 1,
@@ -17,6 +18,7 @@ var bindClick = function(){
 				end: function(){
 					contentOpen = false;
 					$(".content-main .zw .loging").css("overflow-y","hidden");
+					$(".mouse").show();
 				}
 			})
 		}
