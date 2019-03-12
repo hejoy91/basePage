@@ -3,7 +3,16 @@ body{
 }
 .border{border: solid 1px;}
 .clearfix{display: block;}
-
+.rainbow{
+	width: 200px;
+	height: 200px;
+	-webkit-background: radial-gradient(circle,transparent 35%,red 40%,
+		orange 45%,yellow 50%,green 55%,blue 60%,indigo 65%,violet 70%,
+		transparent 71%);
+	background: radial-gradient(circle,transparent 35%,red 40%,
+		orange 45%,yellow 50%,green 55%,blue 60%,indigo 65%,violet 70%,
+		transparent 71%);
+}
 .personalInfo{
 	transition: 2s;
 	-moz-transition: 2s;	/* Firefox 4 */
