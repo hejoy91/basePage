@@ -16,6 +16,12 @@ $(document).ready(function(){
 		},
 		template: "<button v-on:click='incrementHandler'>你点击了{{count}}次</button>",
 	});
+	Vue.directive("focus",{
+		inserted: function(el,binding){
+			$(el).val(binding.value.text);
+			el.focus();
+		}
+	})
 	var app = new Vue({
 		el: "#app",
 		data: {
