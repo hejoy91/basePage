@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>vue页面</title>
+		<script src="http://www.canwedo.com/plugin/jquery/jquery.js"></script>
+		<script src="http://www.canwedo.com/plugin/vue/vue.js"></script>
+		<script src="js/index.js"></script>
+	</head>
+	<style>
+		.class1{background-color: #01AAED;}
+		a{display: block;background-color: #EAEAEA;border-left: solid orange 5px;}
+		.mb{padding: 5px 5px 5px 20px;background-color: #EAEAEA;margin: 5px 0px;}
+		.mb div{}
+	</style>
+	<body>
+		<div id="app">
+			{{message}}|{{message|uppercase}}
+			<div v-html="htitle"></div>
+			<div class="mb">
+				<div class="">
+					<input type="checkbox" checked="checked" v-on:click="ckClick_vf" />是否显示文本框
+					<input v-if="seen" v-model="message" />
+					<div v-bind:class="{class1: use}">
+						<input type="checkbox" v-on:click="ckClick" />
+						是否使用这个类
+					</div>
+				</div>
+			</div>
+			<div class="mb">
+				v-model双向绑定、v-for的使用
+				<div id="">
+					<input type="checkbox" value="tencent" v-model="ary">tencent
+					<input type="checkbox" value="baidu" v-model="ary">baidu
+					<input type="checkbox" value="alibaba" v-model="ary">alibaba
+					<ul>
+						<li v-for="item in ary">
+							{{item}}
+						</li>
+						<li>------模版中使用-------</li>
+						<template v-for="ii in ary">
+							<li>{{ii}}</li>
+						</template>
+						<li>------对象-------</li>
+						<li v-for="(v,k,i) in obj">
+							{{i}}.{{k}}:{{v}}
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="mb">
+				监听属性
+				<div class="">
+					<input v-model="count"/>
+					<div>{{countMsg}}</div>
+				</div>
+			</div>
+			<div class="mb">
+				按键监听ctrl+c
+				<div class="">
+					<input v-on:keyup.ctrl.67 ="ctrlc" /> {{keyMsg123}}
+				</div>
+			</div>
+			<div class="mb">
+				自定义组件
+				<div class="">
+					<input type="text" v-model="parentMsg" />
+					<child v-bind:childmsg="parentMsg"></child>
+				</div>
+				
+			</div>
+			<div class="mb">
+				自定义组件->自定义事件
+				<div class="">
+					<button-counter v-on:increment="incrementTotal"></button-counter>
+					<button-counter v-on:increment="incrementTotal"></button-counter>
+					<button-counter v-on:increment="incrementTotal"></button-counter>
+					<label>总共点击了{{totalCount}}次</label>
+				</div>
+				
+			</div>
+			
+			
+			
+			
+			
+		</div>
+		
+	</body>
+</html>
