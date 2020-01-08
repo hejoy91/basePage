@@ -23,7 +23,7 @@ $(document).ready(function(){
 			htitle: "<h1>content</h1>",
 			use: false,
 			seen: true,
-			ary: ["tom","jerry","lucy","polly","jim"],
+			ary: ["tom","jerry"],
 			obj: {name: "tom",url: "www.tom.com"},
 			count: 1,
 			countMsg: "",
