@@ -73,13 +73,14 @@ header .rainbow-tips{
     	height: 50px;
     	color: #fff;
     	font-family: 幼圆;
+		font-size: 20px;
 }
 
 /*********头部——end************/
 /*********正文部分***************/
 .inner{position: relative;width: 940px;margin: 0 auto;padding-top: 20px;}
 
-.content-main{width: 690px;}
+.content-main{width: 100%;}
 .content-main img{width: 100%;}
 .content-main .headText{margin-bottom: 10px;}
 .content-main .headText p{
@@ -109,6 +110,8 @@ h3.content-main :before {
 .content-main .zw{
 	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 	margin-bottom: 30px;
+	float: left;
+	width: 70%;
 }
 .content-main .zw .loging{
 	height: 250px;
@@ -136,7 +139,8 @@ h3.content-main :before {
 	font-size: 18px;
 	font-style: bold;
 	text-align: left;
-	width: 202px;
+	width: 25%;
+	float: right;
 	/*background-image: url(../../images/header-bg.jpg);*/
 	transition: 1s;
 	-moz-transition: 2s;	
